@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【安澤健康守護】解密隱形的紅色訊號：陪你一起傾聽體內水道的溫柔提醒</title>
+    <!-- 引入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 引入 Google Fonts (Noto Sans TC) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <!-- 引入 FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            DEFAULT: '#2a5599', // 搭配安澤LOGO的深藍色
+                            light: '#f0f9ff', // 柔和溫暖的淡藍色背景 (象徵水流與純淨)
+                            accent: '#0284c7' // 水道藍/純淨藍調
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #f0f9ff; /* 柔和粉藍色 */
+            background-image: radial-gradient(#bae6fd 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.97);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #2a5599, #0284c7);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        @media print {
+            body { background: white; }
+            .glass-card { box-shadow: none; border: none; max-width: 100%; margin: 0; padding: 0; }
+            @page { margin: 0.4cm 0.6cm; size: A4 portrait; }
+            .no-print { display: none; }
+            /* 強制列印時內文字體至少 14pt，並縮減空隙以保證 A4 一頁 */
+            p, .print-text-large { font-size: 14pt !important; line-height: 1.35 !important; }
+            h3 { font-size: 15pt !important; }
+            h2 { font-size: 16pt !important; }
+            .text-xs { font-size: 10pt !important; }
+            .print-py-none { padding-top: 0px !important; padding-bottom: 0px !important; }
+            .print-my-small { margin-top: 2px !important; margin-bottom: 2px !important; }
+            .print-gap-small { gap: 6px !important; }
+            .print-p-small { padding: 6px !important; }
+            .print-img-scale { max-height: 150px !important; width: auto !important; }
+        }
+    </style>
+</head>
+<body class="text-gray-800 antialiased min-h-screen py-3 px-4 md:px-8">
+
+    <!-- 主容器 -->
+    <div class="max-w-4xl mx-auto glass-card rounded-3xl shadow-xl overflow-hidden">
+        
+        <!-- 頂部/標題區 -->
+        <header class="bg-white px-6 py-4 md:py-6 border-b-4 border-brand text-center relative print-py-none">
+            <!-- 裝飾背景 -->
+            <div class="absolute top-0 left-0 w-full h-full overflow-hidden opacity-10 pointer-events-none">
+                <i class="fa-solid fa-faucet-drip absolute -right-10 -top-10 text-9xl text-brand"></i>
+                <i class="fa-solid fa-droplet absolute left-5 bottom-5 text-6xl text-brand-accent"></i>
+            </div>
+
+            <!-- LOGO -->
+            <img src="安澤健康顧問%20Anzecare%20Health.png" alt="安澤健康顧問 Anzecare Health" class="h-11 md:h-13 mx-auto mb-2 relative z-10 object-contain">
+            
+            <p class="text-brand font-bold tracking-widest mb-1 text-base md:text-lg relative z-10">【安澤健康守護】</p>
+            <h1 class="text-2xl md:text-3.5xl font-black text-brand leading-tight relative z-10">
+                解密隱形的紅色訊號<br>
+                <span class="text-xl md:text-2.5xl mt-1.5 block text-gray-700 font-bold">陪你一起傾聽體內水道的<span class="gradient-text">溫柔提醒</span></span>
+            </h1>
+        </header>
+
+        <!-- 內容區 -->
+        <main class="p-5 md:p-8 space-y-4 print-p-small">
+
+            <!-- 我們的身體發生了什麼事？ -->
+            <section class="space-y-3">
+                <div class="flex items-center gap-3">
+                    <div class="bg-brand text-white w-9 h-9 rounded-full flex items-center justify-center text-lg shadow-md shrink-0">
+                        <i class="fa-solid fa-circle-question"></i>
+                    </div>
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800">我們的身體發生了什麼事？</h2>
+                </div>
+                
+                <!-- 圖文並茂排版：電腦版左右並排，手機/列印版合適縮放 -->
+                <div class="flex flex-col md:flex-row gap-5 items-center print-gap-small">
+                    <div class="flex-1 space-y-2">
+                        <p class="text-gray-700 leading-relaxed text-base md:text-lg font-medium print-text-large">
+                            正常情況下，我們的紅血球就像是一顆顆<strong>「紅色活力物流球」</strong>，應該乖乖待在血管這條封閉的高速公路上。而我們的腎臟和膀胱就像是體內精密的水流淨化與儲存中心。
+                        </p>
+                        <p class="text-gray-700 leading-relaxed text-base md:text-lg font-medium print-text-large">
+                            <strong>「尿潛血」</strong>的意思是，肉眼雖然看不見任何紅色，但在顯微鏡下，發現有極少量的紅血球掉進了尿液排水道。這就像是家裡的水管系統出現了極其微小、肉眼難察的微滲漏，讓幾顆紅色小球溜了出來。男女性因生理結構不同，背後的秘密也大不相同：
+                        </p>
+                    </div>
+                    <!-- 融入泌尿系統結構圖 -->
+                    <div class="shrink-0 bg-white p-2 rounded-xl border border-gray-100 shadow-sm text-center">
+                        <img src="licensed-image.jpeg" alt="人體泌尿系統結構圖" class="h-44 md:h-48 rounded-lg object-contain mx-auto print-img-scale" onerror="this.onerror=null; this.src='https://images.unsplash.com/photo-1530026405186-ed1ea0ac7a63?w=300&q=80';">
+                        <span class="text-xs text-gray-400 mt-1 block">人體泌尿系統結構圖</span>
+                    </div>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-4 print-gap-small">
+                    <!-- 女性卡片 -->
+                    <div class="bg-rose-50/80 border-l-4 border-rose-400 p-4 rounded-r-2xl shadow-sm print-p-small">
+                        <div class="flex items-center gap-3 mb-1 text-rose-800">
+                            <i class="fa-solid fa-venus text-2xl"></i>
+                            <h3 class="text-lg font-bold">👩 女性夥伴的「左右鄰居借道」</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                            女生尿道口與陰道口為鄰，最常見的潛血原因往往是健檢時剛好碰上<strong>生理期前後</strong>，紅血球不小心「借道」混入。另外女生尿道較短，若最近忘記喝水或常憋尿，水道輕微發炎也會讓管壁滲出幾顆紅血球。
+                        </p>
+                    </div>
+
+                    <!-- 男性卡片 -->
+                    <div class="bg-sky-50/80 border-l-4 border-sky-400 p-4 rounded-r-2xl shadow-sm print-p-small">
+                        <div class="flex items-center gap-3 mb-1 text-sky-800">
+                            <i class="fa-solid fa-mars text-2xl"></i>
+                            <h3 class="text-lg font-bold">👨 男性夥伴的「水道過載抗議」</h3>
+                        </div>
+                        <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                            男生尿道會經過前列腺。若最近工作壓力大、長期久坐或熬夜，前列腺易疲憊充血。另外健檢前若進行了<strong>劇烈運動</strong>（重訓、馬拉松、騎單車），水道因震盪或擠壓會產生暫時性外漏。若喝水太少有微小結石，小刮傷也會引發紅字。
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 核心生活處方 -->
+            <section class="space-y-3">
+                <div class="flex items-center gap-3">
+                    <div class="bg-brand-accent text-white w-9 h-9 rounded-full flex items-center justify-center text-lg shadow-md">
+                        <i class="fa-solid fa-wand-magic-sparkles"></i>
+                    </div>
+                    <h2 class="text-xl md:text-2xl font-bold text-gray-800">核心生活處方：三個水道保養法，我們一起練習！</h2>
+                </div>
+
+                <div class="grid md:grid-cols-3 gap-4 print-gap-small">
+                    <!-- 水分 -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-0.5 transition duration-300 print-p-small">
+                        <div>
+                            <div class="bg-blue-50 text-blue-600 w-11 h-11 mx-auto rounded-full flex items-center justify-center text-xl mb-1.5">
+                                <i class="fa-solid fa-glass-water"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center mb-1">💧 多喝水、常沖刷</h3>
+                            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                                每天喝足 <strong>2000 毫升</strong>以上的白開水。水分是水道最好的天然清潔劑，能把發炎物質與微小結晶溫柔地沖走。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 習慣 -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-0.5 transition duration-300 print-p-small">
+                        <div>
+                            <div class="bg-teal-50 text-teal-600 w-11 h-11 mx-auto rounded-full flex items-center justify-center text-xl mb-1.5">
+                                <i class="fa-solid fa-toilet"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center mb-1">🚽 溫柔排尿、不當忍者</h3>
+                            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                                聽從身體的呼喚，有尿意就去上廁所。我們一起戒掉憋尿的習慣，不給細菌在膀胱定居的機會。
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 生理期避開 -->
+                    <div class="bg-white p-4 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:-translate-y-0.5 transition duration-300 print-p-small">
+                        <div>
+                            <div class="bg-rose-50 text-rose-600 w-11 h-11 mx-auto rounded-full flex items-center justify-center text-xl mb-1.5">
+                                <i class="fa-solid fa-calendar-xmark"></i>
+                            </div>
+                            <h3 class="text-lg font-bold text-gray-800 text-center mb-1">🧼 採尿避開生理期</h3>
+                            <p class="text-gray-700 text-sm md:text-base leading-relaxed font-medium print-text-large">
+                                女性夥伴若剛好遇上生理期前後，採尿時記得一定要向醫護人員登記，安排延後複查，就能輕鬆避開隱形干擾。
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 建議就醫與諮詢管道 -->
+            <section class="grid md:grid-cols-2 gap-4 pt-1 print-gap-small">
+                <!-- 建議就醫科別 -->
+                <div class="bg-gray-50 p-4 rounded-2xl border border-gray-200 flex flex-col justify-center print-p-small">
+                    <h3 class="text-base md:text-lg font-bold text-gray-800 mb-1 flex items-center gap-2">
+                        <i class="fa-solid fa-stethoscope text-brand"></i> 建議就醫 / 追蹤科別
+                    </h3>
+                    <p class="text-gray-600 text-xs md:text-sm mb-1.5 leading-tight">
+                        單次尿潛血在休息與補水後常會消失。但若連續 2-3 次複查皆有異常，建議預約：
+                    </p>
+                    <div class="flex flex-wrap gap-1">
+                        <span class="bg-brand text-white px-2.5 py-1 rounded-full text-xs font-semibold shadow-sm">泌尿科 (水道守護者)</span>
+                        <span class="bg-brand text-white px-2.5 py-1 rounded-full text-xs font-semibold shadow-sm">腎臟內科</span>
+                        <span class="bg-brand text-white px-2.5 py-1 rounded-full text-xs font-semibold shadow-sm">婦產科 (生理借道)</span>
+                    </div>
+                </div>
+
+                <!-- 安心諮詢管道 -->
+                <div class="bg-brand text-white p-4 rounded-2xl shadow-lg relative overflow-hidden print-p-small">
+                    <div class="absolute -right-4 -bottom-4 opacity-10">
+                        <i class="fa-solid fa-comments text-7xl"></i>
+                    </div>
+                    <h3 class="font-bold mb-1 flex items-center gap-2 relative z-10 text-base md:text-lg">
+                        <i class="fa-solid fa-heart-circle-check"></i> 健康是生活的基石，安澤陪伴您
+                    </h3>
+                    <p class="text-brand-light text-sm md:text-base leading-relaxed relative z-10 font-medium print-text-large">
+                        我是您的臨場服務護理師，隨時都在。別自己嚇自己，讓我們一起從喝好下一杯水開始吧！
+                    </p>
+                </div>
+            </section>
+
+        </main>
+
+        <!-- 頁尾/免責聲明 -->
+        <footer class="bg-gray-100 py-3 px-6 text-center border-t border-gray-200 flex flex-col items-center">
+            <!-- 頁尾 LOGO -->
+            <img src="安澤健康顧問%20Anzecare%20Health.png" alt="安澤健康顧問 Anzecare Health" class="h-8 md:h-9 mb-2 object-contain opacity-75">
+            
+            <p class="text-xs md:text-sm text-gray-600 flex items-center justify-center gap-2 font-medium">
+                <i class="fa-solid fa-triangle-exclamation"></i>
+                免責聲明：本單張僅供健康衛教參考，具體診斷與治療請遵照醫囑。
+            </p>
+            <p class="text-xs text-gray-400 mt-1">&copy; 安澤健康顧問 Anzecare Health Consulting</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
